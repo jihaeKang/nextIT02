@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+            $('#show_it').click(function(){
+                // $('#ff').show('slow');
+                // 메소드 체이닝 (함수를 체인처럼 이어서)
+                $('#dog_img').toggle('slow').animate({ left: '100px'});
+                // $('#dog_img').animate({ left: '100px'}); 얘 안쓰고 위에 붙여도됨
+            });
+            $('#fade_in').click(function(){
+                $('#dog_img').fadeIn('slow');
+            });
+            $('#fade_out').click(function(){
+                $('#dog_img').fadeOut('slow');
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="show_it">show it</button>
+    <button id="fade_in">fade in</button>
+    <button id="fade_out">fade out</button>
+    <img id="dog_img" src="211025 강지혜(하루) 증멍사진.jpg" width="120px" height="150px" 
+      style="display: none; position: relative;" alt="">
+</body>
+</html>

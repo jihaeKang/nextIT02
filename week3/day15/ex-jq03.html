@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                // alert($("#target").val());
+                $('#p_id').html('<span>'+$("#target").val()+'</span>');
+            });
+            $('#btn_append').click(function(){
+                $('#p_id').append('<span>'+$("#target").val()+'</span>');
+            });
+            $('#btn_prepend').click(function(){
+                $('#p_id').prepend('<span>'+$("#target").val()+'</span>');
+            });
+            $('span').click(function(){    // 스팬이 아래 만들어져있으면 일케 다이렉트로 쓰면되는데 여기엔 동적으로 생성돼서 아래 방법 사용
+                $(this).remove();
+            });
+            // 동적으로 생성된 엘리먼트에 이벤트 적용
+            $(document).on('click', 'span', function(){
+                $(this).remove(); 
+            });
+        });
+    </script>
+</head>
+<body>
+    이름 : <input type="text" id="target"><br>
+    <button id="btn">get</button>
+    <button id="btn_append">append</button>
+    <button id="btn_prepend">prepend</button>
+    <p id="p_id"></p>
+</body>
+</html>
