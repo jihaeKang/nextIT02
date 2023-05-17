@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>댕댕트립_전체</title>
+    <style>
+        #map_title {
+          text-align: center; /* 가운데 정렬을 위한 text-align 설정 */
+          padding-top: 20px;
+        }
+        #map {
+          width: 1500px;
+          height: 800px;
+          margin: 0 auto; /* 가운데 정렬을 위한 margin 설정 */
+        }
+      </style>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=services,clusterer,drawing"></script>
+</head>
+<body class="homepage is-preload">
+  <div id="page-wrapper">
+
+    <!-- Header -->
+      <section id="header">
+        <div class="container">
+
+          <!-- Logo -->
+            <h1 id="logo"><a href="메인.html">댕댕트립</a></h1>
+            <p><h3>같이 강원도 여행 가자!</h3></p>
+
+          <!-- Nav -->
+            <nav id="nav">
+              <ul>
+                <li><a class="icon solid fa-home" href="메인.html"><span>홈</span></a></li>
+                <li>
+                  <a href="#" class="icon fa-chart-bar"><span>여행지 안내</span></a>
+                  <ul>
+                    <li><a href="지도.html">전체</a></li>
+                    <li><a href="관광지.html">관광지</a></li>
+                    <li><a href="#">숙박</a></li>
+                    <li><a href="#">식음료</a></li>
+                    <li><a href="#">체험</a></li>
+                    <li><a href="#">동물병원</a></li>
+                    <!-- <li>
+                      <a href="#">Phasellus consequat</a>
+                      <ul>
+                        <li><a href="#">Magna phasellus</a></li>
+                        <li><a href="#">Etiam dolore nisl</a></li>
+                        <li><a href="#">Phasellus consequat</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Veroeros feugiat</a></li> -->
+                  </ul>
+                </li>
+                <li><a class="icon solid fa-cog" href="나의여행.html"><span>나의 여행</span></a></li>
+									<li><a class="icon solid fa-retweet" href="관련소식.html"><span>관련소식</span></a></li>
+									<li><a class="icon solid fa-sitemap" href="커뮤니티.html"><span>커뮤니티</span></a></li>
+									<li><a class="icon solid fa-sitemap" href="login.html"><span>로그인 및 회원가입</span></a></li>
+              </ul>
+            </nav>
+        </div>
+      </section>
+  </div>
+  <section id="map_title">
+    <div>
+      <header>
+        <h2><strong>전체</strong></h2>
+      </header>
+    </div>
+  </section>
+  <div id="map" style="width:1500px;height:800px;"></div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b5fc00ba623532540677e2eb4970c37c"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.dropotron.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

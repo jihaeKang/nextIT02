@@ -1,0 +1,193 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400&display=swap');
+
+@font-face {
+    font-family: 'Eulyoo1945';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Recipekorea';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: url(fonts/NotoSansKR-Light.woff2) format('woff2'),
+        url(fonts/NotoSansKR-Light.woff) format('woff'),
+        url(fonts/NotoSansKR-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/NotoSansKR-Regular.woff2) format('woff2'),
+        url(fonts/NotoSansKR-Regular.woff) format('woff'),
+        url(fonts/NotoSansKR-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    src: url(fonts/NotoSansKR-Medium.woff2) format('woff2'),
+        url(fonts/NotoSansKR-Medium.woff) format('woff'),
+        url(fonts/NotoSansKR-Medium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/NotoSansKR-Bold.woff2) format('woff2'),
+        url(fonts/NotoSansKR-Bold.woff) format('woff'),
+        url(fonts/NotoSansKR-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 900;
+    src: url(fonts/NotoSansKR-Black.woff2) format('woff2'),
+        url(fonts/NotoSansKR-Black.woff) format('woff'),
+        url(fonts/NotoSansKR-Black.otf) format('opentype');
+}
+/*
+@font-face {
+    font-family: 'Recipekorea';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/Recipekorea.woff2) format('woff2'),
+        url(fonts/Recipekorea.woff) format('woff'),
+        url(fonts/Recipekorea.otf) format('opentype'),
+        url(fonts/Recipekorea.ttf) format('truetype');
+}
+*/
+/*
+@font-face {
+    font-family: 'tvN즐거운이야기';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/tvN즐거운이야기Light.woff2) format('woff2'),
+        url(fonts/tvN즐거운이야기Light.woff) format('woff'),
+        url(fonts/tvN즐거운이야기Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'tvN즐거운이야기';
+    font-style: normal;
+    font-weight: 600;
+    src: url(fonts/tvN즐거운이야기Bold.woff2) format('woff2'),
+        url(fonts/tvN즐거운이야기Bold.woff) format('woff'),
+        url(fonts/tvN즐거운이야기Bold.otf) format('opentype'),
+        url(fonts/tvN즐거운이야기Bold.ttf) format('truetype');
+}
+*/
+
+@font-face {
+    font-family: 'S-CoreDream';
+    font-style: normal;
+    font-weight: 900;
+    src: url(fonts/SCDream8.woff2) format('woff2'),
+        url(fonts/SCDream8.woff) format('woff'),
+        url(fonts/SCDream8.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'S-CoreDream';
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/S-CoreDream-7ExtraBold.woff2) format('woff2'),
+        url(fonts/S-CoreDream-7ExtraBold.woff) format('woff'),
+        url(fonts/S-CoreDream-7ExtraBold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'S-CoreDream';
+    font-style: normal;
+    font-weight: 500;
+    src: url(fonts/S-CoreDream-5Medium.woff2) format('woff2'),
+        url(fonts/S-CoreDream-5Medium.woff) format('woff'),
+        url(fonts/S-CoreDream-5Medium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'S-CoreDream';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/S-CoreDream-4Regular.woff2) format('woff2'),
+        url(fonts/S-CoreDream-4Regular.woff) format('woff'),
+        url(fonts/S-CoreDream-4Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'S-CoreDream';
+    font-style: normal;
+    font-weight: 300;
+    src: url(fonts/S-CoreDream-3Light.woff2) format('woff2'),
+        url(fonts/S-CoreDream-3Light.woff) format('woff'),
+        url(fonts/S-CoreDream-3Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'S-CoreDream';
+    font-style: normal;
+    font-weight: 100;
+    src: url(fonts/SCDream1.woff2) format('woff2'),
+        url(fonts/SCDream1.woff) format('woff'),
+        url(fonts/SCDream1.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/NanumSquareR.woff2) format('woff2'),
+        url(fonts/NanumSquareR.woff) format('woff'),
+        url(fonts/NanumSquareR.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Jalnan';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/Jalnan.woff2) format('woff2'),
+        url(fonts/Jalnan.woff) format('woff'),
+        url(fonts/Jalnan.otf) format('opentype'),
+        url(fonts/Jalnan.ttf) format('truetype');
+}
+/*
+@font-face {
+    font-family: 'Eulyoo1945';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/Eulyoo1945-Regular.woff2) format('woff2'),
+        url(fonts/Eulyoo1945-Regular.woff) format('woff'),
+        url(fonts/Eulyoo1945-Regular.otf) format('opentype'),
+        url(fonts/Eulyoo1945-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Eulyoo1945';
+    font-style: normal;
+    font-weight: 600;
+    src: url(fonts/Eulyoo1945-SemiBold.woff2) format('woff2'),
+        url(fonts/Eulyoo1945-SemiBold.woff) format('woff'),
+        url(fonts/Eulyoo1945-SemiBold.otf) format('opentype'),
+        url(fonts/Eulyoo1945-SemiBold.ttf) format('truetype');
+}
+*/
