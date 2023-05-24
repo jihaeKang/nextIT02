@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.1.0/wordcloud2.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" id="file-input" multiple><br>
+    <canvas id="my_canvas" width="1000" height="800"></canvas>
+    <script>
+        let totalWordCountObject = {}; // 총 단어 카운트
+        function countWords(str){
+                let counts = {};
+                let words = str.split(' ');
+                //console.log('배열: ', words);
+                for(let word of words){
+                    word = word.toLowerCase().trim();
+                    if(word !== '' && word.length > 1){   // 단어 자를건데 한글자는 의미없으니까 걸러내게 조건 부여 
+                        
+                        counts[word] = counts[word] ? counts[word] + 1 : 100;   // 여기서 카운팅, 처음엔 아무것도 안들어가니까 100이 들어가고 또 나오는 단어는 +1이 됨
+                        
+                    }
+                }
+                return counts;
+            }
+
+        document.getElementById('file-input').addEventListener('change',function(event){
+            let files = event.target.files;
+            for(let i = 0; i < files.length; i++){
+                let file = files[i];
+                if(file.type === 'text/plain'){  // 텍스트 파일만 처리
+                    let reader = new FileReader();
+                    reader.onload = function(e){
+                        let text = e.target.result;
+                        let wordCountObject = countWords(text);
+                        console.log('ㅇㅇ:',wordCountObject);
+                        for(let word in wordCountObject){
+                            // totalWordCountObject[word] || 0 은 존재하고 0이 아닌경우 그 값을 반환, 존재하지 않거나 0인경우 0 
+                            // 최초에는 단어가 없으니까 뒤에꺼 들어가고 있으면 +해서 넣어주고?
+                            totalWordCountObject[word] = (totalWordCountObject[word] || 0) + totalWordCountObject[word];
+
+                        }
+                    }
+                    reader.readAsText(file);
+                }
+            }
+            console.log('또브젝트 : ',totalWordCountObject);
+        });
+    </script>
+</body>
+</html>
