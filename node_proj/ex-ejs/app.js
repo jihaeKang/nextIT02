@@ -10,3 +10,11 @@ app.get('/', (req,res)=>{
     let data = {nm: 'Nick', age : 20};
     res.render('index', data);
 });
+app.get('/users',(req, res)=>{
+    let users = [
+         {id : 1, name : 'nick'}
+        ,{id : 2, name : 'judy'}
+        ,{id : 3, name : 'jack'}
+    ];
+    res.render('user', {users});
+});
